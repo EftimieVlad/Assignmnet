@@ -2,7 +2,7 @@
 
 New information RSS feeds, rome library
 
-Estimated elipsed time 7-8 hours
+Estimated elapsed time 7-8 hours
 
 Workflow
 
@@ -19,7 +19,7 @@ Better information caching ( in memory at this time )
 
 
 Used IDE:
-Intellij 
+Intellij IDEA
 
 Sql
 
