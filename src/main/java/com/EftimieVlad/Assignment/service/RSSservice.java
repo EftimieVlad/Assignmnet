@@ -17,15 +17,11 @@ public class RSSservice {
     private RSSrepository rsSrepository;
 
 
-    public List<RSS> getAll () {
-       return this.rsSrepository.findAll();
-    }
-    public RSS getById( int id ) {
-        return this.rsSrepository.findById(id);
-    }
+    public List<RSS> getAll () {       return this.rsSrepository.findAll();    }
     public void save (RSS rss) {
         this.rsSrepository.save(rss);
     }
+
 
 
 

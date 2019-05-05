@@ -11,5 +11,4 @@ import java.util.List;
 @Repository
 public interface RSSrepository extends JpaRepository<RSS, Integer> {
 
-   public RSS findById(int id);
 }

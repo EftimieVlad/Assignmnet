@@ -1,0 +1,11 @@
+create schema assignment
+create table assignment.rss
+(
+  id             int          not null
+    primary key,
+  created_date   datetime     null,
+  description    longtext     null,
+  image          longblob     null,
+  published_date datetime     null,
+  title          varchar(255) null
+);

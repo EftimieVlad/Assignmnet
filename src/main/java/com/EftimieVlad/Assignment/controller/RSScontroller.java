@@ -1,6 +1,7 @@
 package com.EftimieVlad.Assignment.controller;
 
 import com.EftimieVlad.Assignment.entity.RSS;
+import com.EftimieVlad.Assignment.scheduledTasks.PoolRSSfeeds;
 import com.EftimieVlad.Assignment.service.RSSservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +21,9 @@ public class RSScontroller {
     public List<RSS> getAll () {
         return this.rsSservice.getAll();
     }
-    @GetMapping("/investigations/{id}")
-    public RSS getInvestigations(@PathVariable int id) {
-        return this.rsSservice.getById(id);
+    @GetMapping("/lastFeeds")
+    public List<RSS> lastFeeds () {
+        return PoolRSSfeeds.cache;
     }
 
 }
