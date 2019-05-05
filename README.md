@@ -6,8 +6,8 @@ Estimated elapsed time 7-8 hours
 
 Workflow
 
-This app has a schaduled function that reads rss feeds from  http://feeds.nos.nl/nosjournaal?format=xml ( it is hardcoded ).
-Everytime a new feed (title and date are unique) is found is added to the database.
+This app has a schaduled function that reads rss feeds from  http://feeds.nos.nl/nosjournaal?format=xml ( it is hardcoded ). Changed to a dinamic Csv file system.
+There is a get last records and it is based on the last rss feed query who has an enbedeed cache.
 Imformation is provided at the endpoint /feed/all (get request) and it return all the information in raw format ( images are bytes )
 
 
